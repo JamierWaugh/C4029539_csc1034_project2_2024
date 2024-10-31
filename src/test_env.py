@@ -8,7 +8,7 @@ with path.open(mode="r") as f: #opens file as f using relative path
     csvF = csv.reader(f) #reads file using csv module
     i = 0
     for line in csvF: #iterates through every line
-        hash[i] = Booking(line[0],str(line[1]) + str(line[2]),line[3],line[4],line[5])
+        hashmap[i] = Booking(line[0],str(line[1]) + str(line[2]),line[3],line[4],line[5])
         i += 1
-print(hashmap[1].room) #Example output of hashmap / table
+print(hashmap[1].get_room()) #Example output of hashmap / table
 
